@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task42 - DateTime Picker</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker-bs3.css">
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower_components/moment/moment.js"></script>
+<script type="text/javascript" src="daterangepicker.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="span12">
+		<h1>Task42 - DateTime Picker</h1>
+		<hr>
+		<h4>Basic Date Range Picker</h4>
+		<div class="well">
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="control-group">
+						<div class="controls">
+							<div class="input-prepend input-group">
+								<span class="add-on input-group-addon">
+									<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+								</span>
+								<input type="text" style="width: 200px" name="reservation" id="reservation" class="form-control" value="05/18/2016 - 05/26/2016" />
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<h4>Basic Single Date Picker</h4>
+		<div class="well">
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="control-group">
+						<div class="controls">
+							<div class="input-prepend input-group">
+								<span class="add-on input-group-addon">
+									<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+								</span>
+								<input type="text" style="width: 200px" name="birthday" id="birthday"class="form-control" value="05/18/2016" />
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<h4>Date Range &amp; Time Picker with 30 Minute Increments</h4>
+		<div class="well">
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="control-group">
+						<label class="control-label" for="reservationtime">
+							Choose your check-in and check-out times:
+						</label>
+						<div class="controls">
+							<div class="input-prepend input-group">
+								<span class="add-on input-group-addon">
+									<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+								</span>
+									<input type="text" style="width: 400px" name="reservation" id="reservationtime" class="form-control" value="08/01/2016 1:00 PM - 08/01/2016 1:30 PM" class="span4" />
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<h4>Options Usage</h4>
+			<div class="well" style="overflow: auto">
+				<button id="options1" class="btn btn-primary">
+					Apply Option Set 1
+				</button>
+				<button id="options2" class="btn btn-primary">
+					Apply Option Set 2
+				</button>
+				<button id="destroy" class="btn btn-primary">
+					Remove DateRangePicker
+				</button>
+				<div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+					<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+					<span></span>
+					<b class="caret"></b>
+				</div>
+			</div>
+		<h4>Plays nicely with Bootstrap dropdowns</h4>
+			<div class="well">
+				<div class="dropdown" style="display: inline-block;">
+					<a data-toggle="dropdown" class="btn btn-primary" href="#">
+						Regular dropdown
+					</a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+						<li>
+							<a href="#">item</a>
+						</li>
+					</ul>
+				</div>
+				<div id="reportrange2" class="btn" style="display: inline-block; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+					<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+					<span></span>
+					<b class="caret"></b>
+				</div>
+			</div>
+	</div>
+</div>
+</body>
+</html>
